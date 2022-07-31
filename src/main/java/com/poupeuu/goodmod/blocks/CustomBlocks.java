@@ -23,6 +23,7 @@ public class CustomBlocks {
     		.sound(SoundType.AMETHYST)
     		.friction(10f)
     		.requiresCorrectToolForDrops()
+    		
     		.strength(1.0f)
     		));
     public static final RegistryObject<Item> GOOD_BLOCK_ITEM = CustomItems.ITEMS.register("good_block", () -> new BlockItem(GOOD_BLOCK.get(), new Item.Properties().tab(GoodMod.GOOD_TAB)));
