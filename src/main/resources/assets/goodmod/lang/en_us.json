@@ -1,4 +1,7 @@
 { 
 	"block.goodmod.good_block":"Good Block",
+	
+	"item.goodmod.good_shard":"Good Shard",
+	
 	"itemGroup.good_tab":"Good Tab"
 }
