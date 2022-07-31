@@ -1,0 +1,19 @@
+{ 
+	"type": "minecraft:crafting_shaped",
+	"patterm": [ 
+		"###",
+		"#X#",
+		"###"
+	],
+	"key": { 
+		"#": { 
+			"item": "minecraft:red_dye"
+		},
+		"X": { 
+			"item": "minecraft:emerald_block"
+		}
+	},
+	"result": { 
+		"item": "goodmod:good_block"
+	}
+}
