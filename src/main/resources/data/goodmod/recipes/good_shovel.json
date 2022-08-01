@@ -1,0 +1,19 @@
+{ 
+	"type": "minecraft:crafting_shaped",
+	"pattern": [ 
+		" # ",
+		" X ",
+		" X "
+	],
+	"key": { 
+		"#": { 
+			"item": "goodmod:good_shard"
+		},
+		"X": { 
+			"item": "minecraft:stick"
+		}
+	},
+	"result": { 
+		"item": "goodmod:good_shovel"
+	}
+}

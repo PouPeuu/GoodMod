@@ -3,6 +3,10 @@
 	
 	"item.goodmod.good_shard":"Good Shard",
 	"item.goodmod.good_sword":"Good Sword",
+	"item.goodmod.good_pickaxe":"Good Pickaxe",
+	"item.goodmod.good_axe":"Good Axe",
+	"item.goodmod.good_shovel":"Good Shovel",
+	"item.goodmod.good_hoe":"Good Hoe",
 	
 	"itemGroup.good_tab":"Good Tab"
 }

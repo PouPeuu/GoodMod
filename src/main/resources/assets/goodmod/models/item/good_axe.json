@@ -1,6 +1,6 @@
 { 
 	"parent": "item/handheld",
 	"textures": { 
-		"layer0": "goodmod:item/good_sword"
+		"layer0": "goodmod:item/good_axe"
 	}
 }
