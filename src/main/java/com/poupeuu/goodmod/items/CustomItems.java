@@ -2,7 +2,10 @@ package com.poupeuu.goodmod.items;
 
 import com.poupeuu.goodmod.GoodMod;
 import com.poupeuu.goodmod.tiers.ItemTiers;
+import com.poupeuu.goodmod.tiers.ModArmorMaterials;
 
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
@@ -25,5 +28,8 @@ public class CustomItems {
     public static final RegistryObject<Item> GOOD_SHOVEL = ITEMS.register("good_shovel", () -> new ShovelItem(ItemTiers.GOOD, 5, -2.0f, new Item.Properties().tab(GoodMod.GOOD_TAB)));
     public static final RegistryObject<Item> GOOD_HOE = ITEMS.register("good_hoe", () -> new HoeItem(ItemTiers.GOOD, 5, -2.0f, new Item.Properties().tab(GoodMod.GOOD_TAB)));
     
-    
+    public static final RegistryObject<ArmorItem> GOOD_HELMET = ITEMS.register("good_helmet", () -> new ArmorItem(ModArmorMaterials.GOOD,EquipmentSlot.HEAD, new Item.Properties().tab(GoodMod.GOOD_TAB)));
+    public static final RegistryObject<ArmorItem> GOOD_CHESTPLATE = ITEMS.register("good_chestplate", () -> new ArmorItem(ModArmorMaterials.GOOD,EquipmentSlot.CHEST, new Item.Properties().tab(GoodMod.GOOD_TAB)));
+    public static final RegistryObject<ArmorItem> GOOD_LEGGINGS = ITEMS.register("good_leggings", () -> new ArmorItem(ModArmorMaterials.GOOD,EquipmentSlot.LEGS, new Item.Properties().tab(GoodMod.GOOD_TAB)));
+    public static final RegistryObject<ArmorItem> GOOD_BOOTS = ITEMS.register("good_boots", () -> new ArmorItem(ModArmorMaterials.GOOD,EquipmentSlot.FEET, new Item.Properties().tab(GoodMod.GOOD_TAB)));
 }

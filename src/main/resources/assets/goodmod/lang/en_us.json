@@ -7,6 +7,10 @@
 	"item.goodmod.good_axe":"Good Axe",
 	"item.goodmod.good_shovel":"Good Shovel",
 	"item.goodmod.good_hoe":"Good Hoe",
+	"item.goodmod.good_helmet":"Good Helmet",
+	"item.goodmod.good_chestplate":"Good Chestplate",
+	"item.goodmod.good_leggings":"Good Leggings",
+	"item.goodmod.good_boots":"Good Boots",
 	
 	"itemGroup.good_tab":"Good Tab"
 }
