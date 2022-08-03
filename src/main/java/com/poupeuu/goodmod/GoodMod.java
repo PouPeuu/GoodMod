@@ -3,6 +3,9 @@ package com.poupeuu.goodmod;
 import com.mojang.logging.LogUtils;
 import com.poupeuu.goodmod.blocks.CustomBlocks;
 import com.poupeuu.goodmod.items.CustomItems;
+import com.poupeuu.goodmod.world.feature.ModConfigFeatures;
+import com.poupeuu.goodmod.world.feature.ModPlacedFeatures;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -49,16 +52,13 @@ public class GoodMod
     public GoodMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        // Register the Deferred Register to the mod event bus so blocks get registered
         CustomBlocks.BLOCKS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so items get registered
         CustomItems.ITEMS.register(modEventBus);
+        ModConfigFeatures.CONFIGURED_FEATURES.register(modEventBus);
+        ModPlacedFeatures.PLACED_FEATURE.register(modEventBus);
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 

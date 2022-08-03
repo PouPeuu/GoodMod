@@ -21,6 +21,7 @@ public class CustomItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, GoodMod.MODID);
     
     public static final RegistryObject<Item> GOOD_SHARD = ITEMS.register("good_shard", () -> new Item(new Item.Properties().tab(GoodMod.GOOD_TAB).stacksTo(16)));
+    public static final RegistryObject<Item> BAD_CHUNK = ITEMS.register("bad_chunk", () -> new Item(new Item.Properties().tab(GoodMod.GOOD_TAB)));
     
     public static final RegistryObject<Item> GOOD_SWORD = ITEMS.register("good_sword", () -> new SwordItem(ItemTiers.GOOD, 5, -3.0f, new Item.Properties().tab(GoodMod.GOOD_TAB)));
     public static final RegistryObject<Item> GOOD_PICKAXE = ITEMS.register("good_pickaxe", () -> new PickaxeItem(ItemTiers.GOOD, 5, -2.0f, new Item.Properties().tab(GoodMod.GOOD_TAB)));

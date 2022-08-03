@@ -1,6 +1,7 @@
 { 
 	"replace": false,
 	"values": [ 
-		"goodmod:good_block"
+		"goodmod:good_block",
+		"goodmod:bad_ore"
 	]
 }
