@@ -3,6 +3,7 @@ package com.poupeuu.goodmod;
 import com.mojang.logging.LogUtils;
 import com.poupeuu.goodmod.blocks.CustomBlocks;
 import com.poupeuu.goodmod.items.CustomItems;
+import com.poupeuu.goodmod.mobs.CustomEntities;
 import com.poupeuu.goodmod.world.feature.ModConfigFeatures;
 import com.poupeuu.goodmod.world.feature.ModPlacedFeatures;
 
@@ -58,6 +59,7 @@ public class GoodMod
 
         CustomBlocks.BLOCKS.register(modEventBus);
         CustomItems.ITEMS.register(modEventBus);
+        CustomEntities.ENTITIES.register(modEventBus);
         ModConfigFeatures.CONFIGURED_FEATURES.register(modEventBus);
         ModPlacedFeatures.PLACED_FEATURE.register(modEventBus);
 
