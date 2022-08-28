@@ -2,6 +2,7 @@ package com.poupeuu.goodmod.blocks;
 
 import com.poupeuu.goodmod.GoodMod;
 import com.poupeuu.goodmod.blocks.custom.GoodBlock;
+import com.poupeuu.goodmod.blocks.custom.Purifier;
 import com.poupeuu.goodmod.items.CustomItems;
 
 import net.minecraft.world.item.BlockItem;
@@ -29,12 +30,21 @@ public class CustomBlocks {
     public static final RegistryObject<Block> BAD_ORE = BLOCKS.register("bad_ore", () -> new Block(BlockBehaviour.Properties
     		.of(Material.STONE)
     		.sound(SoundType.STONE)
-    		.friction(2)
+    		.friction(2f)
     		.requiresCorrectToolForDrops()
     		.strength(3.0f,2.0f)
+    		));
+    public static final RegistryObject<Block> PURIFIER = BLOCKS.register("purifier", () -> new Purifier(BlockBehaviour.Properties
+    		.of(Material.HEAVY_METAL)
+    		.sound(SoundType.ANVIL)
+    		.friction(0.6f)
+    		.requiresCorrectToolForDrops()
+    		.strength(3.0f,2.0f)
+    		.noOcclusion()
     		));
     
     //BlockItems
     public static final RegistryObject<Item> GOOD_BLOCK_ITEM = CustomItems.ITEMS.register("good_block", () -> new BlockItem(GOOD_BLOCK.get(), new Item.Properties().tab(GoodMod.GOOD_TAB)));
     public static final RegistryObject<Item> BAD_ORE_ITEM = CustomItems.ITEMS.register("bad_ore", () -> new BlockItem(BAD_ORE.get(), new Item.Properties().tab(GoodMod.GOOD_TAB)));
+    public static final RegistryObject<Item> PURIFIER_ITEM = CustomItems.ITEMS.register("purifier", () -> new BlockItem(PURIFIER.get(), new Item.Properties().tab(GoodMod.GOOD_TAB)));
 }

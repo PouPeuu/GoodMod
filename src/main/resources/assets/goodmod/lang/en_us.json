@@ -1,5 +1,7 @@
 { 
 	"block.goodmod.good_block":"Good Block",
+	"block.goodmod.bad_ore":"Bad Ore",
+	"block.goodmod.purifier":"Purifier",
 	
 	"item.goodmod.good_shard":"Good Shard",
 	"item.goodmod.good_sword":"Good Sword",
@@ -11,6 +13,8 @@
 	"item.goodmod.good_chestplate":"Good Chestplate",
 	"item.goodmod.good_leggings":"Good Leggings",
 	"item.goodmod.good_boots":"Good Boots",
+	"item.goodmod.bad_nugget":"Bad Nugget",
+	"item.goodmod.good_nugget":"Good Nugget",
 	
 	"itemGroup.good_tab":"Good Tab"
 }

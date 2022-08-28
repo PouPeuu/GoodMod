@@ -7,6 +7,8 @@ import com.poupeuu.goodmod.world.feature.ModConfigFeatures;
 import com.poupeuu.goodmod.world.feature.ModPlacedFeatures;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -89,4 +91,5 @@ public class GoodMod
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
     }
+    
 }
